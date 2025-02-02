@@ -12,7 +12,12 @@ Dieses Programm dient zur Verwaltung von Produkten und Bestellungen in einem ein
 
 ### Bestellverwaltung
 - Bestellung aufgeben (Bestand wird automatisch reduziert)
-- Achtung: 2 Klassen zur verwaltung der DB-Tabellen sind erforderlich, daher auch das `Connection` Objekt in der Main!
+
+## Datenbankanbindung
+- Achtung: 3 Klassen zur verwaltung der DB-Tabellen sind erforderlich!
+- Die Klasse `DatabaseConnection` stellt die Verbindung zur Datenbank her.
+- Die Klasse `ProductManager` enthält Methoden zur Verwaltung von Produkten.
+- Die Klasse `OrderManager` enthält Methoden zur Verwaltung von Bestellungen.
 
 ## Benutzerführung
 Das Programm bietet ein einfaches Menü, in dem der Benutzer die gewünschten Funktionen durch Eingabe der entsprechenden Zahlen auswählen kann.
